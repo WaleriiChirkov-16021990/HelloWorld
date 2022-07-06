@@ -1,5 +1,7 @@
-﻿int A = 79729;
-int B = 383;
+﻿int A = new Random().Next(2,10);
+Console.WriteLine(A);
+int B = new Random().Next(2,10);
+Console.WriteLine(B);
 int result = A + B;
 // Console.WriteLine("Введите первое слагаемое: ");
 // int A = Console.ReadLine();
