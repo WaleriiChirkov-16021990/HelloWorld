@@ -1,0 +1,15 @@
+C:\Users\Валерий Чирков\Documents\VScode\c#\Examples\Examples001_Hello_world\bin\Debug\net6.0\Examples001_Hello_world.exe
+C:\Users\Валерий Чирков\Documents\VScode\c#\Examples\Examples001_Hello_world\bin\Debug\net6.0\Examples001_Hello_world.deps.json
+C:\Users\Валерий Чирков\Documents\VScode\c#\Examples\Examples001_Hello_world\bin\Debug\net6.0\Examples001_Hello_world.runtimeconfig.json
+C:\Users\Валерий Чирков\Documents\VScode\c#\Examples\Examples001_Hello_world\bin\Debug\net6.0\Examples001_Hello_world.dll
+C:\Users\Валерий Чирков\Documents\VScode\c#\Examples\Examples001_Hello_world\bin\Debug\net6.0\Examples001_Hello_world.pdb
+C:\Users\Валерий Чирков\Documents\VScode\c#\Examples\Examples001_Hello_world\obj\Debug\net6.0\Examples001_Hello_world.csproj.AssemblyReference.cache
+C:\Users\Валерий Чирков\Documents\VScode\c#\Examples\Examples001_Hello_world\obj\Debug\net6.0\Examples001_Hello_world.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Валерий Чирков\Documents\VScode\c#\Examples\Examples001_Hello_world\obj\Debug\net6.0\Examples001_Hello_world.AssemblyInfoInputs.cache
+C:\Users\Валерий Чирков\Documents\VScode\c#\Examples\Examples001_Hello_world\obj\Debug\net6.0\Examples001_Hello_world.AssemblyInfo.cs
+C:\Users\Валерий Чирков\Documents\VScode\c#\Examples\Examples001_Hello_world\obj\Debug\net6.0\Examples001_Hello_world.csproj.CoreCompileInputs.cache
+C:\Users\Валерий Чирков\Documents\VScode\c#\Examples\Examples001_Hello_world\obj\Debug\net6.0\Examples001_Hello_world.dll
+C:\Users\Валерий Чирков\Documents\VScode\c#\Examples\Examples001_Hello_world\obj\Debug\net6.0\refint\Examples001_Hello_world.dll
+C:\Users\Валерий Чирков\Documents\VScode\c#\Examples\Examples001_Hello_world\obj\Debug\net6.0\Examples001_Hello_world.pdb
+C:\Users\Валерий Чирков\Documents\VScode\c#\Examples\Examples001_Hello_world\obj\Debug\net6.0\Examples001_Hello_world.genruntimeconfig.cache
+C:\Users\Валерий Чирков\Documents\VScode\c#\Examples\Examples001_Hello_world\obj\Debug\net6.0\ref\Examples001_Hello_world.dll
