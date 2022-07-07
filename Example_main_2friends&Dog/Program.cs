@@ -1,9 +1,9 @@
-﻿int Dist = 100000; //Distance
-int v1 = 1; // FirstFriendSpeed
-int v2 = 2; // SecondFriendSpeed
-int v3 = 5; // DogSpeed
+﻿int Dist = 10000; //Distance on FirstFriend to SecondFriend(m.)
+int v1 = 1; // FirstFriendSpeed(m/s)
+int v2 = 2; // SecondFriendSpeed(m/s)
+int v3 = 5; // DogSpeed(m/s)
 int count = 0; // количество забегов
-int Friend = 2; //направление собаки
+int Friend = 2; //направление собаки ко второму другу
 int end_Distance = 10;  // расстояние между друзьями при котором собака остановится
 
 int t =0; //время забега собаки от друга 1 до друга 2
