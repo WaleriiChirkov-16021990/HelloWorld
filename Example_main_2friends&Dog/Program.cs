@@ -1,27 +1,23 @@
-﻿int Dist = 10000; //Distance on FirstFriend to SecondFriend(m.)
-int v1 = 1; // FirstFriendSpeed(m/s)
-int v2 = 2; // SecondFriendSpeed(m/s)
-int v3 = 5; // DogSpeed(m/s)
-int count = 0; // количество забегов
-int Friend = 2; //направление собаки ко второму другу
-int end_Distance = 10;  // расстояние между друзьями при котором собака остановится
+﻿int Dist = 10000; 
+int v1 = 1; 
+int v2 = 2; 
+int v3 = 5; 
+int count = 0; 
+int Friend = 2;   
+int t =0; 
 
-int t =0; //время забега собаки от друга 1 до друга 2
-
-while(Dist>end_Distance){        //ввели ограничение для завершения цикла
-   if(Friend==1){      //при направление движения собаки от друга 2 к другу 1  
-       t = Dist/(v1+v3);   
-       Friend= 2;          // меняем направление собаки
-       Dist = Dist - (v1+v2)*t;  //расчет оставшейся дистанции меджу друзьями
-       count++;               // обновляем счетчик, добавляем 1 в переменную
-   }
+while(Dist>10){        
+   if(Friend==1){        
+       t = Dist/(v1+v3);            
+       Dist = Dist - (v1+v2)*t;
+       Friend= 2;   
+        }
    
-  if(Friend==2){  //при направление движения собаки от друга 1 к другу 2
-        t = Dist/(v2+v3);   //время, за которое собака добежит от друга 1 до друга 2
-        Friend= 1;               // меняем направление собаки
-        Dist = Dist - (v1+v2)*t; //расчет оставшейся дистанции меджу друзьями
-        count++;             // обновляем счетчик, добавляем 1 в переменную
-   }
-   
+     else {  
+        t = Dist/(v2+v3);      
+        Dist = Dist - (v1+v2)*t;
+        Friend= 1;   
+         }
+        count++;   
 }
-Console.WriteLine("Собака пробежит " + count + " раз !"); // вывод количества забегов собаки.
+Console.WriteLine("Собака пробежит " + count + " раз !");
