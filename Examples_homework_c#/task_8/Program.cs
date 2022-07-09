@@ -9,7 +9,7 @@ Console.WriteLine("Enter number (N>1): ");
 int a = int.Parse(Console.ReadLine());
 int x = 2;
 
-while (x<a){
+while (x<=a){
      if (x%2==0 ){
       Console.Write(x +" ");
      }
