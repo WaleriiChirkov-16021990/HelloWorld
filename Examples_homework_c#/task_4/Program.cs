@@ -11,14 +11,15 @@ Console.WriteLine("The third number = " + c);
 
 int max = a;
 
-    if( b>max ){
+    if( b > max ){
         max = b;
-        Console.WriteLine("Max = Second_Number = " + max);
+    
     }
-      else if( c>max ){
-        max=c;
-        Console.WriteLine("Max = The third = " + max);
+    if( c > max ){
+        max = c;
+        
     }
-      else{
-        Console.WriteLine("Max = First_Number =  " + max);
+    if( a >= max ){
+        max = a;
     }
+Console.WriteLine("max = " + max);
