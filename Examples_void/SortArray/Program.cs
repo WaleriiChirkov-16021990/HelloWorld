@@ -1,58 +1,69 @@
 ﻿
 using System;
 void SortArray(int [] Array,int min, int max){
-    int [] array1 = Array;
+    // int [] Array = Array;
 int [] sortedArray = QuickSort(Array, 0, Array.Length - 1);
 
 
 Console.Write($"Sorted array : {string.Join(",", sortedArray )}");
 
-Console.ReadLine();
+// Console.ReadLine();
 
 
 int [] QuickSort(int [] Array , int minIndex, int maxIndex)
 {
     if (minIndex>=maxIndex)
     {
-        return array1;
+        return Array;
     }
-    int pivotIndex = GetPivotIndex(array1, minIndex, maxIndex) ;
+    int pivotIndex = GetPivotIndex(Array, minIndex, maxIndex) ;
 
-    QuickSort(array1,minIndex,pivotIndex-1);
+    QuickSort(Array,minIndex,pivotIndex-1);
 
-    QuickSort(array1,pivotIndex+1,maxIndex);
+    QuickSort(Array,pivotIndex+1,maxIndex);
 
 return Array;
 }
 
-int GetPivotIndex(int [] array1, int minIndex, int maxIndex )
+int GetPivotIndex(int [] Array, int minIndex, int maxIndex )
 {
     int pivot =minIndex-1;
 
     for (int i = minIndex; i <= maxIndex; i++)
     {
-        if (array1[i]<array1[minIndex])
+        if (Array[i]<Array[maxIndex])
         {
             pivot++;
-            Swap(ref array1[pivot], ref array1[i]);
+            Swap(ref Array[pivot], ref Array[i]);
         }
     }
 
      pivot++;
-     Swap(ref array1[pivot], ref array1[maxIndex]);
+     
+     Swap(ref Array[pivot], ref Array[maxIndex]);
 
     return pivot;
 }
 
-void Swap(ref int leftnum, ref int rightnum)
+void Swap(ref int leftItem, ref int rightItem)
 {
-            int x = leftnum;
-            leftnum= rightnum;
-            rightnum= x ;
+            int x = leftItem;
+            leftItem= rightItem;
+            rightItem= x ;
 
 }
 
 }     // delete } for start after version//
+
+int [] Numbers = {5,1,10,67,6,4,0,99,95,84,30};
+SortArray (Numbers,0,7);
+
+
+
+
+
+
+
 
 // while(index<size){
 //     if(Array[index]> max){
@@ -123,6 +134,4 @@ void Swap(ref int leftnum, ref int rightnum)
 
 // }
 
-int [] Numbers = {5,1,10,67,6,4,0};
-SortArray(Numbers,0,6);
 
