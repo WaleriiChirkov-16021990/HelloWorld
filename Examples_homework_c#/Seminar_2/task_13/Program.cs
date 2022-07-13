@@ -24,7 +24,7 @@ if (i < 100)
 }
 else
 {
-    long theThird = (((num % i) % (i / 10)) % i - (num % (i / 100))) / (i / 100);
-    Console.WriteLine("Третья цифра вашего числа " + theThird);
+    long theThirdItem = (((num % i) % (i / 10)) % i - (num % (i / 100))) / (i / 100);
+    Console.WriteLine("Третья цифра вашего числа " + theThirdItem);
 
 }
