@@ -6,13 +6,11 @@
 */
 
 Console.WriteLine("Введите целое положительное число :");
-
 int N = int.Parse(Console.ReadLine());
-
 int a = 2;
 
 
-while (a <= N-1 )
+while (a <= N - 1)
 {
     if (GetEasyNumber(a) == true)
     {
@@ -21,20 +19,21 @@ while (a <= N-1 )
     }
     a++;
 }
-if(GetEasyNumber(N)==true){
-    
-        Console.Write(N);
-        Console.Write(" ");
-}
-if(GetEasyNumber(N) == false) 
+if (GetEasyNumber(N) == true)
 {
-        Console.Write(" N is not a prime number! ");
-    
+
+    Console.Write(N);
+    Console.Write(" ");
+}
+if (GetEasyNumber(N) == false)
+{
+    Console.Write(" N is not a prime number! ");
+
 }
 
 bool GetEasyNumber(int Number)
 {
-    for (int i = 2; i< Number; i++)
+    for (int i = 2; i < Number; i++)
     {
 
         if (Number % i == 0)
