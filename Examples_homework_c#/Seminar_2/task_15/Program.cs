@@ -8,17 +8,17 @@
 */
 
 
-string [] Array = {"Понедельник","Вторник","Среда","Четверг","Пятница","Суббота","Воскресенье"};
+string[] Array = { "Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота", "Воскресенье" };
 Console.WriteLine("Введите число от 1 до 7 включительно : ");
 int number = int.Parse(Console.ReadLine());
 
-if(number==6 | number == 7 )
-{    
-  Console.WriteLine(Array[number-1] + ". Это выходной день ! ");  
-    
+if (number == 6 | number == 7)
+{
+    Console.WriteLine(Array[number - 1] + ". Это выходной день ! ");
+
 }
 else
 {
-   Console.WriteLine(Array[number-1] + ". Это не выходной день ! ");  
+    Console.WriteLine(Array[number - 1] + ". Это не выходной день ! ");
 }
 
