@@ -16,14 +16,20 @@ using System;
 Console.WriteLine(" Enter number : ");
 int number = int.Parse(Console.ReadLine());
 
-
-if (IsEqually(number) == true)
+if (number > 9999 & number < 100000)
 {
-    Console.WriteLine(string.Join(" ", IsEqually(number), " Число является палиндромом ! "));
+    if (IsEqually(number) == true)
+    {
+        Console.WriteLine(string.Join(" ", IsEqually(number), " Число является палиндромом ! "));
+    }
+    else
+    {
+        Console.WriteLine(string.Join(" ", IsEqually(number), "Число не является полиндромом ! "));
+    }
 }
 else
 {
-    Console.WriteLine(string.Join(" ", IsEqually(number), "Число не является полиндромом ! "));
+    Console.WriteLine("ERROR! Программа принимает на ввод только 5-ти значное число 😢! Повторите Ввод ! ");
 }
 
 
