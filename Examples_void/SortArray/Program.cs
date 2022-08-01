@@ -54,7 +54,7 @@ void SortArray(int[] Array, int min, int max)
 
     }
 
-}     // delete } for start after version//
+}
 
 int[] Numbers = { 5, 1, 10, 67, 6, 4, 0, 99, 95, 84, 30 };
-SortArray(Numbers, 0, 4);
+SortArray(Numbers, 0, 10);

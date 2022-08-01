@@ -1,4 +1,5 @@
-﻿using System;
+﻿
+using System;
 
 int[] arr = { 1, 4, 2, 7, 0, 12, 56, 2, 5, 7, 23 };
 PrintArray(arr);
@@ -6,6 +7,7 @@ SelectionArray_Min_Max(arr);
 PrintArray(arr);
 SelectionArray_Max_Min(arr);
 PrintArray(arr);
+Console.ReadLine();
 
 
 
@@ -18,7 +20,6 @@ void PrintArray(int[] array)
     for (var i = 0; i < count; i++)
     {
         Console.Write($"{array[i]} ");
-
     }
 
     Console.WriteLine();
@@ -35,9 +36,7 @@ void SelectionArray_Min_Max(int[] Array)
 
         }
 
-        int tempPosition = Array[i];
-        Array[i] = Array[minPosition];
-        Array[minPosition] = tempPosition;
+        SwapI(ref Array[i], ref Array[minPosition]);
     }
 }
 
@@ -50,8 +49,13 @@ void SelectionArray_Max_Min(int[] ARRAY)
         {
             if (ARRAY[j] > ARRAY[maxPosition]) maxPosition = j;
         }
-        int tempPosition = ARRAY[i];
-        ARRAY[i] = ARRAY[maxPosition];
-        ARRAY[maxPosition] = tempPosition;
+        SwapI(ref ARRAY[maxPosition], ref ARRAY[i]);
     }
+}
+
+void SwapI(ref int leftItem, ref int rightItem)
+{
+    int tempPosition = leftItem;
+    leftItem = rightItem;
+    rightItem = tempPosition;
 }
