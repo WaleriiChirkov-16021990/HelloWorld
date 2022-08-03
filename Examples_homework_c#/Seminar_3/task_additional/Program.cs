@@ -8,8 +8,6 @@
 
 
 using System;
-
-
 Console.WriteLine("Enter name figure : ");
 string? figure = Console.ReadLine();
 figure = figure.ToLower();
