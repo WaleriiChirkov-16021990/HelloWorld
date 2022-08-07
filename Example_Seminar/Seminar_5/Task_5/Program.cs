@@ -10,6 +10,11 @@
 
 int[] array1 = { 1, 3, 5, 7 };
 int[] array2 = { 2, 4, 9, 8 };
+
+System.Console.WriteLine("Массив 1 : {0} ", String.Join(" ", array1));
+System.Console.WriteLine("Массив 2 : {0} ", String.Join(" ", array2));
+System.Console.WriteLine();
+
 GetCommonSortArray(array2, array1);
 
 
