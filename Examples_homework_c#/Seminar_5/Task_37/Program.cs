@@ -8,23 +8,32 @@
 */
 
 int[] array = { 1, 2, 3, 4, 5 };
-MultiplyItemArray(array);
+System.Console.WriteLine("Массив произведений зеркальных элементов: {0} ", String.Join(" ", GetMultiplyItemArray(array)));
 int[] array2 = { 6, 7, 3, 6 };
-MultiplyItemArray(array2);
+System.Console.WriteLine("Массив произведений зеркальных элементов: {0} ", String.Join(" ", GetMultiplyItemArray(array2)));
 
-void MultiplyItemArray(int[] array)
+int[] GetMultiplyItemArray(int[] array)
 {
-    int multiplication = 0;
+    int size = 0;
+    if (array.Length % 2 == 0)
+    {
+        size = array.Length / 2;
+    }
+    else
+    {
+        size = array.Length / 2 + 1;
+    }
+    int[] MultiplyArray = new int[size];
+
     int i = 0;
     while (i < array.Length - 1 - i)
     {
-        multiplication = array[i] * array[array.Length - i - 1];
-        System.Console.Write(multiplication + " ");
-        multiplication = 0;
+        MultiplyArray[i] = array[i] * array[array.Length - i - 1];
         i++;
     }
     if (array.Length % 2 != 0)
     {
-        System.Console.WriteLine(array[array.Length / 2]);
+        MultiplyArray[size - 1] = array[array.Length / 2];
     }
+    return MultiplyArray;
 }
