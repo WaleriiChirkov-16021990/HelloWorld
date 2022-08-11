@@ -24,6 +24,7 @@ int[] GetMultiplyItemArray(int[] array)
         size = array.Length / 2 + 1;
     }
     int[] MultiplyArray = new int[size];
+    //int[] newArray = new int[array.Length / 2 + array.Length %2]
 
     int i = 0;
     while (i < array.Length - 1 - i)
