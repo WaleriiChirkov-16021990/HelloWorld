@@ -20,14 +20,17 @@ Coordinates[1, 0] = double.Parse(System.Console.ReadLine());
 System.Console.Write("Введите b2: ");
 Coordinates[1, 1] = double.Parse(System.Console.ReadLine());
 
-System.Console.WriteLine("двумерный массив: ");
+System.Console.WriteLine("двумерный массив констант: ");
 Print2DArray(Coordinates);
-if (IsIntersection(Coordinates)) ;
+if (IsIntersection(Coordinates))
 {
     System.Console.WriteLine("Массив координат пересечения : {0} ", String.Join(" ", GetCoordinatesIntersection(Coordinates)));
     System.Console.WriteLine("Координата X точки пересечения = " + Math.Round(GetCoordinatesIntersection(Coordinates)[0], 1));
     System.Console.WriteLine("Координата Y точки пересечения = " + Math.Round(GetCoordinatesIntersection(Coordinates)[1], 1));
-
+}
+else
+{
+    System.Console.WriteLine("Координаты пересечения отсутствуют! ");
 }
 
 
