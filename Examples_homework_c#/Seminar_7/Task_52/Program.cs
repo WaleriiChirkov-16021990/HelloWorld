@@ -22,16 +22,16 @@ int[,] GetRandomArray(string[] input)
     int rows = int.Parse(input[0]);
     int columns = int.Parse(input[1]);
     Random rnd = new Random();
-    int[,] random = new int[rows, columns];
-    for (int i = 0; i < random.GetLength(0); i++)
+    int[,] randomArray = new int[rows, columns];
+    for (int i = 0; i < randomArray.GetLength(0); i++)
     {
-        for (int j = 0; j < random.GetLength(1); j++)
+        for (int j = 0; j < randomArray.GetLength(1); j++)
         {
-            random[i, j] = rnd.Next(1, 15);
+            randomArray[i, j] = rnd.Next(1, 15);
         }
 
     }
-    return random;
+    return randomArray;
 }
 
 void PrintArray(int[,] array)
