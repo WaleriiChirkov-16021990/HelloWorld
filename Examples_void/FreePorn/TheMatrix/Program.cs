@@ -1,7 +1,7 @@
-﻿using System;
-using System.Linq;
+﻿// using System;
+// using System.Linq;
 using System.Text;
-using System.Threading;
+// using System.Threading;
 
 namespace ConsoleMatrixEffect
 {
@@ -42,7 +42,7 @@ namespace ConsoleMatrixEffect
     {
         // символы которые будут использоваться для матрицы
         //private static readonly char[] _symbols = "¢£¥§gYhjHwWÞßĦŠŊŁþøðÖ ".ToCharArray(); //если консольный шрифт поддерживает Unicode
-        private static readonly char[] _symbols = "&%#$@*(@YyuUjJhHFfsqVNnv ".ToCharArray();
+        private static readonly char[] _symbols = "&%#$@*(@YyuUjJhwLHFfsqVNnv ".ToCharArray();
         private readonly int _symbolsLen = _symbols.Length;
 
         // матрица
@@ -51,7 +51,7 @@ namespace ConsoleMatrixEffect
         private readonly int _height;
 
         private readonly Random _rand = new Random(); // задаю глобальный рандомизатор для символов.
-        private const int period = 8; // для вычисления скорости столбцов
+        private const int period = 26; // для вычисления скорости столбцов
 
         /// <summary>
         ///
